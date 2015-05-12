@@ -162,7 +162,7 @@ echo "hstnme=\"$hstnme\"" >> /mnt/system/root/stage2.sh
 >> /mnt/system/root/stage2.sh << EOF
 #CONFIG END
 #--- The script below is automatically generated from stage2.sh ---
-#%#%STAGE2MARKER%#%#
+STAGE2MARKER
 EOF
 chmod +x /mnt/system/root/stage2.sh
 arch-chroot /mnt/system/ /root/stage2.sh
