@@ -1,0 +1,1 @@
+echo "$hstnme" > /etc/hostname
