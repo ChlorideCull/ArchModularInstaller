@@ -38,6 +38,7 @@ function doFormat {
 				select doanotherlv in Yes No; do
 					break;
 				done
+				echo
 			done
 		else
 			echo "------------"
@@ -110,3 +111,4 @@ echo "(You most likely want the disk that /boot resides on, or it's LVM physical
 echo "$disks" | sed 's/Skip//' > /tmp/possibledevs
 doFullList "/tmp/possibledevs"
 exportPostInstall bootloader_install "$doFullList_ret"
+exportPostInstall bootloader_lvm "$lvmused"
