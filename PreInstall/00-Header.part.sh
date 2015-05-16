@@ -1,3 +1,3 @@
 echo "Arch Installer"
-echo "Version very-very-early"
+echo "Version 1.0"
 echo
