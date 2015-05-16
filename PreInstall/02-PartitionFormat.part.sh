@@ -54,9 +54,10 @@ function doFormat {
 		select mpoint in / /home /boot; do
 			mkdir -p "/mnt/system$mpoint"
 			mount "$disknod" "/mnt/system$mpoint"
-			break;
+			return;
 		done
 	fi
+	return;
 }
 
 keeplooping="Yes"
