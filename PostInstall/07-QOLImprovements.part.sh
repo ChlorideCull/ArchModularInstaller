@@ -1,1 +1,1 @@
-pacman -Sy --noconfirm bash-completion
+pacman -Syu --noconfirm bash-completion
