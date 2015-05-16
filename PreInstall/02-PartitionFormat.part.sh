@@ -31,6 +31,7 @@ function doFormat {
 				select shouldformat in Yes No; do
 					if [[ "$shouldformat" == "Yes" ]]; then
 						doFormat "/dev/mapper/${vgname}-${lvname}"
+						break;
 					fi
 				done
 				echo "Create another logical volume?"
