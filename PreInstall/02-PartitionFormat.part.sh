@@ -42,7 +42,7 @@ while [[ "$keeplooping" == "Yes" ]]; do
 			echo -n "Volume Group Name? "
 			read vgname
 			echo "------------"
-			vgcreate -n "$vgname" "$disknod"
+			vgcreate "$vgname" "$disknod"
 			echo "------------"
 			echo -n "Logical Volume Name? "
 			read lvname
